@@ -1,0 +1,11 @@
+*.pyc
+*~
+*.iso
+*manifest
+.project
+.pydevproject
+.settings
+tmp
+.checkstyle
+*.swp
+*.swo
