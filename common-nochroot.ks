@@ -1,14 +1,11 @@
-
-%include version.ks
-
 echo "Copying the initrd out..."
 cp $INSTALL_ROOT/boot/initramfs-$(cd $INSTALL_ROOT/boot && ls vmlinuz-[23]* | \
     sed -e 's/vmlinuz-//').img $LIVE_ROOT/isolinux/initrd0.img
 
-if [ -f "ovirt-authorized_keys" ]; then
+if [ -f "keys/id_rsa.pub" ]; then
   echo "Adding authorized_keys to Image"
   mkdir -p $INSTALL_ROOT/root/.ssh
-  cp -v ovirt-authorized_keys $INSTALL_ROOT/root/.ssh/authorized_keys
+  cp -v keys/id_rsa.pub $INSTALL_ROOT/root/.ssh/authorized_keys
   chown -R root:root $INSTALL_ROOT/root/.ssh
   chmod 755 $INSTALL_ROOT/root/.ssh
   chmod 644 $INSTALL_ROOT/root/.ssh/authorized_keys
@@ -68,7 +65,7 @@ cat $menu >> $LIVE_ROOT/isolinux/isolinux.cfg
 rm $menu
 # remove extra boot args add by updated livecd-tools
 sed -i -e 's/xdriver=vesa nomodeset//g' $LIVE_ROOT/isolinux/isolinux.cfg
-cp $INSTALL_ROOT/usr/share/ovirt-node/syslinux-vesa-splash.jpg $LIVE_ROOT/isolinux/splash.jpg
+cp images/syslinux-vesa-splash.jpg $LIVE_ROOT/isolinux/splash.jpg
 
 # store image version info in the ISO and rootfs
 cat > $LIVE_ROOT/isolinux/version <<EOF

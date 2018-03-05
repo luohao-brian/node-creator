@@ -1,5 +1,5 @@
-PRODUCT='oVirt Node Hypervisor'
-PRODUCT_SHORT='oVirt Node Hypervisor'
-PACKAGE=ovirt-node-image
-VERSION=3.7.0-0.0.master
-RELEASE=0.0.master.el7.centos
+PRODUCT='LiteVirt Hypervisor'
+PRODUCT_SHORT='LiteVirt Hypervisor'
+PACKAGE=litevirt-node-image
+VERSION=1.0.0
+RELEASE=0

@@ -1,4 +1,5 @@
 audit
+augeas
 grubby
 dmraid
 bc
