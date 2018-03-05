@@ -7,44 +7,44 @@ ethtool
 kernel
 hwdata
 passwd
-policycoreutils
+#policycoreutils
 rootfiles
 dhclient
 openssh-clients
 openssh-server
 qemu-kvm
-libmlx4
+#libmlx4
 #ovirt-node
-selinux-policy-targeted
+#selinux-policy-targeted
 vim-minimal
 sudo
 python
-python-gudev
+#python-gudev
 python-libs
-python-setuptools
-python-requests
-python-argparse
-PyPAM
+#python-setuptools
+#python-requests
+#python-argparse
+#PyPAM
 #db4
 # debugging
 hdparm
-sos
-gdb
+#sos
+#gdb
 strace
 sysstat
 tcpdump
 pciutils
 usbutils
 kbd
-lsscsi
+#lsscsi
 psmisc
 numactl
 file
 lsof
-newt-python
+#newt-python
 systemtap-runtime
-qemu-kvm-tools
-setools-console
+#qemu-kvm-tools
+#setools-console
 # remove
 -audit-libs-python
 -ustr
@@ -67,7 +67,7 @@ setools-console
 isomd5sum
 irqbalance
 acpid
-device-mapper-multipath
+#device-mapper-multipath
 kpartx
 dracut-network
 dracut-fips
@@ -85,33 +85,33 @@ kexec-tools
 eject
 
 # for building custom selinux module
-make
-checkpolicy
+#make
+#checkpolicy
 #
-policycoreutils-python
+#policycoreutils-python
 # crypto swap support
-cryptsetup-luks
+#cryptsetup-luks
 # rhbz#641494 RFE - add libguestfs
-libguestfs
-python-libguestfs
-libguestfs-tools-c
-python-hivex
+#libguestfs
+#python-libguestfs
+#libguestfs-tools-c
+#python-hivex
 # sosreport soft-dep
-rpm-python
+#rpm-python
 # for efi installs
-efibootmgr
+#efibootmgr
 # yum for plugins
 yum
 # Consistent ethernet device naming
-biosdevname
-fcoe-utils
+#biosdevname
+#fcoe-utils
 #glusterfs client packages
-glusterfs
-glusterfs-devel
-glusterfs-fuse
-glusterfs-rdma
+#glusterfs
+#glusterfs-devel
+#glusterfs-fuse
+#glusterfs-rdma
 
-NetworkManager-glib
+#NetworkManager-glib
 
 bridge-utils
 squashfs-tools
