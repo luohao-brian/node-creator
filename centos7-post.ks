@@ -5,6 +5,14 @@
 # systemd-journald will then store the data
 install -dm 0755 /var/log/journal
 
+echo "Configuring eth0 networking"
+cat <<EOF > /etc/sysconfig/network-scripts/ifcfg-eth0
+BOOTPROTO=dhcp
+DEVICE=eth0
+ONBOOT=yes
+TYPE=Ethernet
+EOF
+
 echo "Configuring IPTables"
 # here, we need to punch the appropriate holes in the firewall
 cat > /etc/sysconfig/iptables << \EOF

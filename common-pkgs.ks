@@ -101,8 +101,10 @@ eject
 #rpm-python
 # yum for plugins
 yum
+
 # Consistent ethernet device naming
-#biosdevname
+biosdevname
+
 #fcoe-utils
 #glusterfs client packages
 #glusterfs
