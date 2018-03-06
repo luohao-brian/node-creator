@@ -10,7 +10,7 @@ part / --size 2048 --fstype ext2
 # additional default boot parameters
 # Need to use deadline Scheduler for performance, rhbz#647301
 # VM timekeeping: Do not allow C2 state, rhbz#647300
-bootloader --timeout=30 --append="rd.live.check crashkernel=256M rd_NO_MULTIPATH rootflags=ro elevator=deadline install quiet max_loop=256"
+bootloader --timeout=30 --append="elevator=deadline max_loop=256"
 
 # not included by default in Fedora 10 livecd initramfs
 device virtio_blk
