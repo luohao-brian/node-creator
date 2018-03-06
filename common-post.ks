@@ -13,6 +13,9 @@ echo "Creating shadow files"
 pwconv
 grpconv
 
+# set temporary root password to root
+echo root | passwd root --stdin
+
 # root's bash profile
 cat >> /root/.bashrc << \EOF_bashrc
 alias ping='ping -c 3'
