@@ -122,7 +122,6 @@ drop /usr/share/man
 drop /usr/share/X11
 drop /usr/share/i18n
 drop /boot/*
-keep /boot/efi
 keep /boot/System.map*
 keep /boot/symvers*
 drop /var/lib/builder

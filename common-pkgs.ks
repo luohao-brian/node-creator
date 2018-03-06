@@ -99,8 +99,6 @@ eject
 #python-hivex
 # sosreport soft-dep
 #rpm-python
-# for efi installs
-#efibootmgr
 # yum for plugins
 yum
 # Consistent ethernet device naming

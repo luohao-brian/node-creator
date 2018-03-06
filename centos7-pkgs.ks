@@ -18,10 +18,5 @@ linux-firmware
 # To disable hostonly mode
 dracut-config-generic
 
-# Add EFi support
-shim
-grub2-efi
-efibootmgr
-
 # Bug-Url: https://bugzilla.redhat.com/show_bug.cgi?id=1318014
 virt-v2v
