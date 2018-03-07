@@ -1,11 +1,11 @@
 # remove
 
 # rhbz#641494 RFE - add libguestfs
-libguestfs
+#libguestfs
 
 net-tools
 iproute
-ltrace
+#ltrace
 firewalld
 plymouth
 
@@ -19,4 +19,4 @@ linux-firmware
 dracut-config-generic
 
 # Bug-Url: https://bugzilla.redhat.com/show_bug.cgi?id=1318014
-virt-v2v
+#virt-v2v

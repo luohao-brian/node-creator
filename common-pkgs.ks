@@ -13,7 +13,7 @@ rootfiles
 dhclient
 openssh-clients
 openssh-server
-qemu-kvm
+qemu-kvm-ev
 #libmlx4
 #ovirt-node
 #selinux-policy-targeted
@@ -35,7 +35,7 @@ strace
 sysstat
 tcpdump
 pciutils
-usbutils
+#usbutils
 kbd
 #lsscsi
 psmisc
@@ -72,13 +72,13 @@ acpid
 kpartx
 dracut-network
 dracut-fips
-patch
+#patch
 e2fsprogs
 sysfsutils
 less
 iotop
 # Autotest support rhbz#631795
-dosfstools
+#dosfstools
 # kdump
 kexec-tools
 
@@ -119,6 +119,6 @@ squashfs-tools
 mcelog
 
 # for qemu
-libicu
+#libicu
 
 xfsprogs
