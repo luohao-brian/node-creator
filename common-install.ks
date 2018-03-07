@@ -10,7 +10,7 @@ part / --size 2048 --fstype ext2
 # additional default boot parameters
 # Need to use deadline Scheduler for performance, rhbz#647301
 # VM timekeeping: Do not allow C2 state, rhbz#647300
-bootloader --timeout=3 --append="elevator=deadline max_loop=256 net.ifnames=0 biosdevname=0 ro quiet LANG=en_US.UTF-8"
+bootloader --timeout=3 --append="elevator=deadline max_loop=256 net.ifnames=0 biosdevname=0 ro quiet console=ttyS0,115200 LANG=en_US.UTF-8"
 
 # not included by default in Fedora 10 livecd initramfs
 device virtio_blk
