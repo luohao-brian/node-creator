@@ -15,6 +15,7 @@ openssh-clients
 openssh-server
 qemu-kvm-ev
 libvirt-daemon-kvm
+libvirt-client
 #libmlx4
 #ovirt-node
 #selinux-policy-targeted
