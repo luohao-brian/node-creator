@@ -20,3 +20,4 @@ dracut-config-generic
 
 # Bug-Url: https://bugzilla.redhat.com/show_bug.cgi?id=1318014
 #virt-v2v
+node-setup
