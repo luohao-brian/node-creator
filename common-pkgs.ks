@@ -14,6 +14,7 @@ dhclient
 openssh-clients
 openssh-server
 qemu-kvm-ev
+libvirt-daemon-kvm
 #libmlx4
 #ovirt-node
 #selinux-policy-targeted
