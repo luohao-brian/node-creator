@@ -8,6 +8,7 @@
 %packages --excludedocs --nobase
 %include common-pkgs.ks
 %include centos7-pkgs.ks
+%include hypervisor-pkgs.ks
 
 %end
 
